@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#11142f">
+    <meta name="description" content="A little birthday surprise made with care for Debs.">
+    <title>A Birthday Surprise for Debs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <section class="opening-scene" id="opening" aria-label="Birthday surprise opening">
+            <div class="opening-stars" aria-hidden="true">✦ <span>✧</span> ✦</div>
+            <div class="animation-container" id="animationContainer">
+                <div class="cat" id="cat" role="img" aria-label="An animated ASCII cat walks in carrying a birthday note, then sits and watches">
+                    <div class="ascii-cat" aria-hidden="true">
+                        <pre class="ascii-cat-frame ascii-cat-walk-one"> /\_/\
+( o.o )&gt;---+------+
+ &gt; ^ &lt;     |  &lt;3  |
+           +------+</pre>
+                        <pre class="ascii-cat-frame ascii-cat-walk-two"> /\_/\
+( o.o )&gt;---+------+
+  / \      |  &lt;3  |
+           +------+</pre>
+                        <pre class="ascii-cat-frame ascii-cat-idle"> /\_/\
+( -.- )&gt;---+------+
+ &gt; ^ &lt;     |  &lt;3  |
+           +------+</pre>
+                    </div>
+                </div>
+            </div>
+            <div class="birthday-popup" id="birthdayPopup" aria-hidden="true">
+                <div class="popup-sticker" aria-hidden="true">
+                    <svg viewBox="0 0 92 72">
+                        <path d="M17 36 11 8l25 16c7-4 14-4 21 0L82 8l-7 32c0 17-11 25-29 25S17 55 17 36z" fill="#fff9fa" stroke="#55345f" stroke-width="3" stroke-linejoin="round"></path>
+                        <ellipse cx="35" cy="41" rx="3" ry="5" fill="#55345f"></ellipse>
+                        <ellipse cx="58" cy="41" rx="3" ry="5" fill="#55345f"></ellipse>
+                        <circle cx="27" cy="49" r="5" fill="#f5b5c7"></circle>
+                        <circle cx="66" cy="49" r="5" fill="#f5b5c7"></circle>
+                        <path d="m42 49 9 0-4.5 5z" fill="#f27b9b"></path>
+                        <path d="M46 54v4m0 0-5 3m5-3 5 3" fill="none" stroke="#55345f" stroke-width="2" stroke-linecap="round"></path>
+                    </svg>
+                    <span aria-hidden="true">✦</span>
+                </div>
+                <p class="eyebrow">A tiny birthday confession</p>
+                <h1>Hey, Debs!</h1>
+                <p>Happy birthday, Debs. I wish I could give you everything you deserve today. I can't do that with money, so I made you something with the things I can give: my time, my thoughts, and a little piece of my heart. I hope it reminds you how special you are to me, and how glad I am that you're in my life.</p>
+                <button class="button button-light" id="openButton" type="button" disabled>
+                    See what I made <span aria-hidden="true">↗</span>
+                </button>
+            </div>
+        </section>
+
+        <div class="birthday-page" id="birthdayPage" hidden>
+            <section class="flowers-section" id="home">
+                <header class="site-header">
+                    <a class="wordmark" href="#home" aria-label="Debs, back to the flowers">for debs <span>♡</span></a>
+                    <a class="header-link" href="#letter">Read my note <span aria-hidden="true">↓</span></a>
+                </header>
+                <div class="flower-copy" data-reveal>
+                    <p class="eyebrow">A little letter for you</p>
+                    <h1 tabindex="-1">Flowers for<br><span>your day.</span></h1>
+                    <p>I made these flowers bloom just for you. They're only a little thing, but I hope they bring you a bit of the happiness and warmth you bring to the people around you.</p>
+                    <p class="flower-signoff">With love, ♡</p>
+                    <a class="button button-dark" href="#letter">Read my note <span aria-hidden="true">↓</span></a>
+                </div>
+                <div class="flower-garden" aria-hidden="true">
+                    <svg viewBox="0 0 620 500" role="presentation">
+                        <path class="flower-stem" d="M95 465C110 355 122 285 180 190"></path>
+                        <path class="flower-stem" d="M260 470C250 350 275 246 300 142"></path>
+                        <path class="flower-stem" d="M440 470C420 367 443 280 485 205"></path>
+                        <path class="flower-stem" d="M540 470C525 390 535 335 565 277"></path>
+                        <path class="flower-leaf" d="M115 366C54 336 50 296 105 316c31 11 36 31 10 50z"></path>
+                        <path class="flower-leaf" d="M250 353c54-49 90-37 47 8-24 25-43 22-47-8z"></path>
+                        <path class="flower-leaf" d="M434 370c-59-35-55-74-7-45 30 18 29 38 7 45z"></path>
+                        <path class="flower-leaf" d="M535 407c48-35 77-19 35 14-24 19-40 12-35-14z"></path>
+                        <g class="flower-bloom flower-bloom-one" transform="translate(180 190)">
+                            <ellipse class="petal petal-a" cy="-27" rx="18" ry="31"></ellipse>
+                            <ellipse class="petal petal-b" cy="-27" rx="18" ry="31" transform="rotate(60)"></ellipse>
+                            <ellipse class="petal petal-c" cy="-27" rx="18" ry="31" transform="rotate(120)"></ellipse>
+                            <circle class="flower-center" r="13"></circle>
+                        </g>
+                        <g class="flower-bloom flower-bloom-two" transform="translate(300 142)">
+                            <ellipse class="petal petal-c" cy="-31" rx="19" ry="34"></ellipse>
+                            <ellipse class="petal petal-a" cy="-31" rx="19" ry="34" transform="rotate(60)"></ellipse>
+                            <ellipse class="petal petal-b" cy="-31" rx="19" ry="34" transform="rotate(120)"></ellipse>
+                            <circle class="flower-center" r="14"></circle>
+                        </g>
+                        <g class="flower-bloom flower-bloom-three" transform="translate(485 205)">
+                            <ellipse class="petal petal-b" cy="-25" rx="16" ry="28"></ellipse>
+                            <ellipse class="petal petal-a" cy="-25" rx="16" ry="28" transform="rotate(60)"></ellipse>
+                            <ellipse class="petal petal-c" cy="-25" rx="16" ry="28" transform="rotate(120)"></ellipse>
+                            <circle class="flower-center" r="12"></circle>
+                        </g>
+                        <g class="flower-bloom flower-bloom-four" transform="translate(565 277)">
+                            <ellipse class="petal petal-a" cy="-21" rx="14" ry="24"></ellipse>
+                            <ellipse class="petal petal-b" cy="-21" rx="14" ry="24" transform="rotate(60)"></ellipse>
+                            <ellipse class="petal petal-c" cy="-21" rx="14" ry="24" transform="rotate(120)"></ellipse>
+                            <circle class="flower-center" r="10"></circle>
+                        </g>
+                    </svg>
+                </div>
+                <span class="flower-footnote" aria-hidden="true">coded with love · grown for you</span>
+            </section>
+
+            <section class="letter-section" id="letter" aria-labelledby="letter-title">
+                <article class="letter-card" data-reveal>
+                    <p class="eyebrow">A birthday letter</p>
+                    <h2 id="letter-title">A note from me to you</h2>
+                    <h3>Dear Debs,</h3>
+                    <p>I know a website cannot replace a wrapped gift, a big celebration, or all the things you deserve. But I wanted to make something that could hold a few smiles for you. Every picture, every little animation, every line here was put together thinking of you.</p>
+                    <p>On the days when life feels heavy, I hope you remember that you matter, that you are appreciated, and that there are people wishing good things for you. I hope this new chapter is gentle with your heart and generous with its surprises.</p>
+                    <p class="letter-signoff">Happy birthday, Debs. Keep shining. ♡</p>
+                    <a class="button button-dark" href="#memories">Keep going to our memories <span aria-hidden="true">↓</span></a>
+                </article>
+                <span class="letter-sparkle letter-sparkle-one" aria-hidden="true">✦</span>
+                <span class="letter-sparkle letter-sparkle-two" aria-hidden="true">✧</span>
+            </section>
+
+            <section class="memories-section" id="memories">
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow">Little moments, big feelings</p>
+                    <h2>Our love story</h2>
+                    <p>A few snapshots and moving moments, gathered up like a scrapbook.</p>
+                </div>
+                <div class="scrapbook-stage" id="albumStage" aria-label="A looping scrapbook of photos and video memories" aria-live="off">
+                    <span class="scrapbook-doodle doodle-heart doodle-one" aria-hidden="true">♡</span>
+                    <span class="scrapbook-doodle doodle-heart doodle-two" aria-hidden="true">♥</span>
+                    <span class="scrapbook-doodle doodle-arrow doodle-three" aria-hidden="true">↷</span>
+                    <span class="scrapbook-doodle doodle-arrow doodle-four" aria-hidden="true">↶</span>
+                    <figure class="album-card" data-position="0"><div class="polaroid"><div class="album-media"></div><figcaption></figcaption></div></figure>
+                    <figure class="album-card" data-position="1"><div class="polaroid"><div class="album-media"></div><figcaption></figcaption></div></figure>
+                    <figure class="album-card" data-position="2"><div class="polaroid"><div class="album-media"></div><figcaption></figcaption></div></figure>
+                    <figure class="album-card" data-position="3"><div class="polaroid"><div class="album-media"></div><figcaption></figcaption></div></figure>
+                    <figure class="album-card" data-position="4"><div class="polaroid"><div class="album-media"></div><figcaption></figcaption></div></figure>
+                    <figure class="album-card" data-position="5"><div class="polaroid"><div class="album-media"></div><figcaption></figcaption></div></figure>
+                    <figure class="album-card" data-position="6"><div class="polaroid"><div class="album-media"></div><figcaption></figcaption></div></figure>
+                </div>
+                <div class="album-controls" data-reveal>
+                    <button class="button button-outline" id="albumToggle" type="button" aria-pressed="false">Pause album</button>
+                    <button class="button button-green" id="albumNext" type="button">Shuffle now <span aria-hidden="true">↻</span></button>
+                </div>
+            </section>
+
+            <section class="cake-section section-wrap" id="cake">
+                <div class="cake-card">
+                    <div class="cake-copy">
+                        <p class="eyebrow">A little cake, just for you</p>
+                        <h2>Made with love.<br>Finished by you.</h2>
+                        <p>Add the final decorations, then make a wish and blow out the candles.</p>
+                        <button class="button button-light" id="wishButton" type="button">Decorate the cake <span aria-hidden="true">✦</span></button>
+                        <p class="cake-status" id="cakeStatus" aria-live="polite">Your cake is waiting for its finishing touches.</p>
+                        <p class="wish-message" id="wishMessage" aria-live="polite" hidden>May this year bring you the same joy you give to everyone around you. Happy birthday, Debs! ♡</p>
+                    </div>
+                    <div class="cake-art" id="cakeArt" role="img" aria-label="A pastel three-tier birthday cake decorated with strawberries, bows, clouds, and a cat">
+                        <svg class="cake-illustration" viewBox="0 0 520 520" aria-hidden="true">
+                            <g class="cake-glitter" fill="#b995df" stroke="#6b536b" stroke-width="3" stroke-linejoin="round">
+                                <path d="m72 160 6 13 14 2-10 9 3 14-13-7-12 7 3-14-10-9 14-2z"></path>
+                                <path d="m447 204 5 11 12 2-9 8 2 12-10-6-10 6 2-12-9-8 12-2z" fill="#ffd76f"></path>
+                                <path d="m102 317 4 9 10 1-7 7 2 10-9-5-8 5 2-10-7-7 10-1z" fill="#f27b9b"></path>
+                                <path d="m415 303 5 11 12 2-9 8 2 12-10-6-10 6 2-12-9-8 12-2z"></path>
+                            </g>
+                            <ellipse cx="260" cy="479" rx="210" ry="20" fill="#efdce9" stroke="#6b536b" stroke-width="4"></ellipse>
+
+                            <g class="cake-lower-tier" stroke="#6b536b" stroke-width="4" stroke-linejoin="round">
+                                <path d="M54 382c0-20 23-34 51-34h310c28 0 51 14 51 34v70c0 15-12 25-28 25H82c-16 0-28-10-28-25z" fill="#b9e5ee"></path>
+                                <path d="M56 380c30-19 57-21 88-10 26 9 49 8 73-3 26-12 54-10 80 0 27 10 51 13 80 2 31-12 58-9 87 8v14c-11 0-15 9-17 19-2 12-17 15-23 4-4-7-1-15-3-21h-38c-4 8-1 16-6 23-7 10-21 6-22-5-1-7 3-12 2-18h-40c-4 8-1 17-7 24-8 9-21 5-22-6-1-7 3-12 2-18h-40c-4 8-1 17-7 24-8 9-21 5-22-6-1-7 3-12 2-18h-39c-5 8-2 17-8 23-8 9-21 5-22-6-1-7 3-12 2-18h-40c-5 8-2 16-8 22-8 9-21 5-22-6-1-7 3-12 2-18H56z" fill="#e9f8f7"></path>
+                            </g>
+
+                            <g class="cake-middle-tier" stroke="#6b536b" stroke-width="4" stroke-linejoin="round">
+                                <path d="M98 276c0-20 21-33 46-33h232c25 0 46 13 46 33v84c0 15-12 24-27 24H125c-15 0-27-9-27-24z" fill="#f5a9c2"></path>
+                                <path d="M100 274c27-17 51-18 77-8 24 10 41 8 62-2 23-11 43-10 66 0 24 10 45 12 70 2 18-8 37-9 54-2v14c-9 0-12 8-14 17-3 11-16 14-22 4-4-6-2-12-3-17h-38c-4 7-1 14-6 20-7 9-19 5-20-5-1-6 2-10 2-15h-38c-4 7-1 14-6 20-7 9-19 5-20-5-1-6 2-10 2-15h-38c-4 7-1 14-6 20-7 9-19 5-20-5-1-6 2-10 2-15h-39c-4 7-1 14-6 20-7 9-19 5-20-5-1-6 2-10 2-15h-39z" fill="#fff0f3"></path>
+                            </g>
+
+                            <g class="cake-upper-tier" stroke="#6b536b" stroke-width="4" stroke-linejoin="round">
+                                <path d="M164 178c0-18 18-30 39-30h114c21 0 39 12 39 30v83c0 14-10 22-23 22H187c-13 0-23-8-23-22z" fill="#ffe5a4"></path>
+                                <path d="M166 177c20-14 38-15 58-7 16 7 31 7 48-1 19-9 34-8 51 0 12 6 22 8 33 8v13c-7 1-9 7-11 14-3 10-15 12-20 3-3-5-1-10-2-14h-29c-3 6-1 12-5 17-6 8-17 4-18-4-1-5 2-9 1-13h-31c-3 6-1 12-5 17-6 8-17 4-18-4-1-5 2-9 1-13h-29c-3 6-1 12-5 17-6 8-17 4-18-4-1-5 2-9 1-13h-21z" fill="#fff4d2"></path>
+                            </g>
+
+                            <g class="cake-candles" stroke="#6b536b" stroke-width="3" stroke-linejoin="round">
+                                <g transform="translate(202 105)">
+                                    <path d="M0 0h19v61H0z" fill="#fff9fa"></path>
+                                    <path d="m0 15 19-10m-19 28 19-10m-19 28 19-10" fill="none" stroke="#f27b9b" stroke-width="7"></path>
+                                    <path class="cake-flame" d="M9 0C-4-10 5-22 10-30 22-17 23-7 9 0z" fill="#ffd76f"></path>
+                                </g>
+                                <g transform="translate(299 105)">
+                                    <path d="M0 0h19v61H0z" fill="#fff9fa"></path>
+                                    <path d="m0 15 19-10m-19 28 19-10m-19 28 19-10" fill="none" stroke="#b995df" stroke-width="7"></path>
+                                    <path class="cake-flame" d="M9 0C-4-10 5-22 10-30 22-17 23-7 9 0z" fill="#ffd76f"></path>
+                                </g>
+                                <g transform="translate(250 229)">
+                                    <path d="M0 0h19v50H0z" fill="#fff9fa"></path>
+                                    <path d="m0 14 19-10m-19 27 19-10" fill="none" stroke="#f27b9b" stroke-width="7"></path>
+                                    <path class="cake-flame" d="M9 0C-4-10 5-22 10-30 22-17 23-7 9 0z" fill="#ffd76f"></path>
+                                </g>
+                            </g>
+
+                            <g class="cake-cat" stroke="#6b536b" stroke-width="3" stroke-linejoin="round">
+                                <path d="M215 133 207 91l31 20c14-7 27-7 41 0l31-20-8 45c3 27-13 42-43 42s-46-15-44-45z" fill="#fff9fa"></path>
+                                <path d="M225 107 220 96l15 10m53 1 15-11-5 13" fill="#f5b5c7" stroke="none"></path>
+                                <ellipse cx="240" cy="139" rx="3.5" ry="5" fill="#55345f" stroke="none"></ellipse>
+                                <ellipse cx="278" cy="139" rx="3.5" ry="5" fill="#55345f" stroke="none"></ellipse>
+                                <circle cx="228" cy="151" r="6" fill="#f5b5c7" stroke="none"></circle>
+                                <circle cx="290" cy="151" r="6" fill="#f5b5c7" stroke="none"></circle>
+                                <path d="m253 148 11 0-5.5 7z" fill="#f27b9b" stroke="none"></path>
+                                <path d="M258.5 155v6m0 0-6-4m6 4 6-4" fill="none" stroke-linecap="round"></path>
+                            </g>
+
+                            <g class="cake-strawberries" stroke="#6b536b" stroke-width="2.5" stroke-linejoin="round">
+                                <g transform="translate(181 153)">
+                                    <path d="M0 13c-5-13 17-17 22-7 8-3 16 5 9 14l-11 19L4 29z" fill="#f27b9b"></path>
+                                    <path d="M8 10 4 1l9 5 4-7 4 7 9-4-4 9" fill="#9bbd83"></path>
+                                    <circle cx="11" cy="19" r="1.5" fill="#ffd76f" stroke="none"></circle><circle cx="24" cy="21" r="1.5" fill="#ffd76f" stroke="none"></circle><circle cx="18" cy="30" r="1.5" fill="#ffd76f" stroke="none"></circle>
+                                </g>
+                                <g transform="translate(317 153)">
+                                    <path d="M0 13c-5-13 17-17 22-7 8-3 16 5 9 14l-11 19L4 29z" fill="#f27b9b"></path>
+                                    <path d="M8 10 4 1l9 5 4-7 4 7 9-4-4 9" fill="#9bbd83"></path>
+                                    <circle cx="11" cy="19" r="1.5" fill="#ffd76f" stroke="none"></circle><circle cx="24" cy="21" r="1.5" fill="#ffd76f" stroke="none"></circle><circle cx="18" cy="30" r="1.5" fill="#ffd76f" stroke="none"></circle>
+                                </g>
+                                <g transform="translate(81 392) scale(.8)">
+                                    <path d="M0 13c-5-13 17-17 22-7 8-3 16 5 9 14l-11 19L4 29z" fill="#f27b9b"></path>
+                                    <path d="M8 10 4 1l9 5 4-7 4 7 9-4-4 9" fill="#9bbd83"></path>
+                                </g>
+                                <g transform="translate(385 392) scale(.8)">
+                                    <path d="M0 13c-5-13 17-17 22-7 8-3 16 5 9 14l-11 19L4 29z" fill="#f27b9b"></path>
+                                    <path d="M8 10 4 1l9 5 4-7 4 7 9-4-4 9" fill="#9bbd83"></path>
+                                </g>
+                                <g transform="translate(157 410) scale(.58)">
+                                    <path d="M0 13c-5-13 17-17 22-7 8-3 16 5 9 14l-11 19L4 29z" fill="#f27b9b"></path>
+                                    <path d="M8 10 4 1l9 5 4-7 4 7 9-4-4 9" fill="#9bbd83"></path>
+                                </g>
+                                <g transform="translate(237 410) scale(.58)">
+                                    <path d="M0 13c-5-13 17-17 22-7 8-3 16 5 9 14l-11 19L4 29z" fill="#f27b9b"></path>
+                                    <path d="M8 10 4 1l9 5 4-7 4 7 9-4-4 9" fill="#9bbd83"></path>
+                                </g>
+                                <g transform="translate(317 410) scale(.58)">
+                                    <path d="M0 13c-5-13 17-17 22-7 8-3 16 5 9 14l-11 19L4 29z" fill="#f27b9b"></path>
+                                    <path d="M8 10 4 1l9 5 4-7 4 7 9-4-4 9" fill="#9bbd83"></path>
+                                </g>
+                            </g>
+
+                            <g class="cake-decorations" stroke="#6b536b" stroke-width="3" stroke-linejoin="round">
+                                <path d="M132 320c-12 0-17-12-10-20 1-12 18-16 26-7 11-9 27-2 26 11 11 7 5 19-6 19z" fill="#fff9fa"></path>
+                                <path d="M326 320c-12 0-17-12-10-20 1-12 18-16 26-7 11-9 27-2 26 11 11 7 5 19-6 19z" fill="#fff9fa"></path>
+                                <path d="m238 329 22-12 22 12-22 16z" fill="#b9e5ee"></path>
+                                <path d="m260 329-19-14-12 3 9 15 22 12 22-12 9-15-12-3z" fill="#b995df"></path>
+                                <circle cx="260" cy="330" r="6" fill="#ffd76f"></circle>
+                            </g>
+
+                            <g class="cake-glitter cake-extra-glitter" fill="#ffd76f" stroke="#6b536b" stroke-width="2">
+                                <circle cx="128" cy="244" r="4"></circle><circle cx="390" cy="246" r="4"></circle>
+                                <circle cx="179" cy="345" r="4"></circle><circle cx="341" cy="347" r="4"></circle>
+                                <circle cx="220" cy="426" r="4"></circle><circle cx="300" cy="430" r="4"></circle>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </section>
+
+            <section class="poem-section" id="poem">
+                <div class="poem-card" data-reveal>
+                    <span class="poem-flower" aria-hidden="true">✿</span>
+                    <p class="eyebrow">A little love poem</p>
+                    <h2>For Debs</h2>
+                    <p class="poem-lines">A little bloom, a little light,<br>A wish to make your birthday bright.<br>May joy find you in all you do,<br>And sweetest dreams come true for you.<br>The world feels warmer, softer, too—<br>Because the world has you.</p>
+                    <p class="poem-signoff">Happy birthday, with love <span aria-hidden="true">♡</span></p>
+                </div>
+            </section>
+
+            <footer class="site-footer">
+                <p>Made with love for Debs <span aria-hidden="true">♡</span></p>
+            </footer>
+        </div>
+        <div class="soundtrack-player" id="soundtrackPlayer" hidden>
+            <p class="soundtrack-status" id="soundtrackStatus" role="status" aria-live="polite"></p>
+            <button class="soundtrack-toggle" id="soundtrackToggle" type="button" aria-pressed="false">
+                <span class="soundtrack-icon" aria-hidden="true">♫</span>
+                <span class="soundtrack-label">Play song</span>
+            </button>
+        </div>
+        <audio id="soundtrack" src="audio/browser-ready/birthday-song.mp3" loop preload="none"></audio>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
